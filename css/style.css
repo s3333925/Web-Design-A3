@@ -1,0 +1,555 @@
+/* Defining external font and location. */
+@font-face {
+  font-family: OpenSansReg;
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+/* General styling for body, headings, sections. */
+
+html,
+body {
+  margin: 0;
+  color: white;
+  font-family: OpenSansReg, Helvetica, sans-serif;
+  font-size: 16px;
+  min-width: 300px;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #bfa84b;
+  margin: 0;
+}
+
+section:nth-child(even),
+#history,
+#scholarships {
+  background: #2e3036;
+}
+
+section:nth-child(odd) {
+  background: #37393f;
+}
+
+section {
+  padding: 3em 15%;
+  scroll-margin-top: 72px;
+}
+
+section a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+section img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+section a:hover {
+  text-decoration: underline;
+  color: #bfa84b;
+}
+
+/* Nav bar styling */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav {
+  background-color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  height: 72px;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 7.5em;
+  transform: translate(-50%, -50%);
+}
+
+#logo p {
+  margin-left: 1em;
+}
+
+#logo span {
+  font-weight: normal;
+}
+
+#logo:hover {
+  color: #ffffff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover,
+.active,
+nav a:hover {
+  color: #bfa84b;
+}
+
+.wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+ul {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+ul a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  display: inline-block;
+  padding: 2em 1em;
+}
+
+/* Scrollbar styling. */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cdb96a;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.scroller {
+  scrollbar-color: #000000 #cdb96a;
+  scrollbar-width: thin;
+}
+
+/* Hero image styling. */
+
+.mySlides {
+  display: none;
+}
+
+.hero-image img {
+  vertical-align: middle;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.slideshow-container {
+  height: 100vh;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 25px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  color: #bfa84b;
+}
+
+.indicator {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.indicator .active,
+.dot:hover {
+  background-color: #bfa84b;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Z-layout container setup */
+
+.z-grid-container {
+  display: grid;
+  grid-template-areas: "gi1 gi2";
+  column-gap: 1.5em;
+}
+
+.grid-item1 {
+  grid-area: gi1;
+}
+.grid-item2 {
+  grid-area: gi2;
+}
+
+.grid-item3 {
+  grid-area: gi2;
+}
+.grid-item4 {
+  grid-area: gi1;
+}
+
+/* Alumni section styling (home) */
+
+#alumni a {
+  color: #bfa84b;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#alumni a:hover {
+  text-decoration: underline;
+}
+
+.alumni-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 1em;
+  column-gap: 1em;
+}
+
+.grid-item {
+  background: #2e3036;
+  padding: 1em;
+}
+
+.alumni-image {
+  display: flex;
+  align-items: center;
+}
+
+.alumni-image img {
+  height: 300px;
+}
+
+.alumni-text {
+  align-items: center;
+  padding-top: 1em;
+}
+
+.alumni-text p {
+  margin-top: 1em;
+}
+
+#alumni span {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Styling for heading title on hero images */
+
+.hero-title {
+  color: #ffffff;
+  font-size: 10em;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Contact form styling in contac section */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding: 1em 0 1em 0;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  background-color: #37393f;
+  color: #ffffff;
+  padding: 1em;
+  border: none;
+}
+
+input:focus,
+textarea:focus {
+  outline-color: #bfa84b;
+}
+
+textarea {
+  margin-bottom: 2em;
+  height: 10em;
+}
+
+input[type="submit"] {
+  color: #000000;
+  font-weight: bold;
+  background-color: #bfa84b;
+  cursor: pointer;
+  width: 10em;
+  margin: auto;
+}
+
+#contact h1,
+#alumni h1 {
+  text-align: center;
+}
+
+/* Fees table styling in study page */
+
+table,
+th,
+td {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #bfa84b;
+  margin-top: 1em;
+  padding: 0.5em;
+  table-layout: fixed;
+  text-align: center;
+}
+
+th {
+  background-color: #bfa84b;
+  color: #000000;
+}
+
+/* Title image styling for about and study page */
+
+.title-image {
+  margin: 0;
+  padding: 0;
+  height: 500px;
+}
+
+.title-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer section styling */
+
+footer {
+  text-align: center;
+  background-color: #000000;
+  padding: 1em;
+}
+
+/* Hide hamburger icon on desktop view */
+
+.wrapper .menu-icon {
+  display: none;
+}
+
+.wrapper input[type="checkbox"] {
+  display: none;
+}
+
+/* Media query by screen size. Styling for tablet view */
+
+@media only screen and (max-width: 900px) {
+  ul {
+    margin: 0;
+    padding: 0;
+    transform: none;
+  }
+
+  /* Nav bar styling. Change to hamburger menu */
+
+  .wrapper .menu-icon {
+    display: block;
+  }
+
+  nav .links {
+    display: inline-grid;
+    position: fixed;
+    background: #000000;
+    width: 100%;
+    left: -100%;
+    margin-left: 0;
+    top: 72px;
+  }
+
+  nav #show-menu:checked ~ .links {
+    left: 0%;
+  }
+
+  ul li {
+    padding: 2em 1em;
+  }
+
+  #logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #logo p {
+    margin-left: 1em;
+  }
+
+  /* Hamburger icon */
+  .wrapper .menu-icon {
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 2em;
+    width: 70px;
+    text-align: center;
+  }
+
+  /* Reduce hero title font size for tablet view */
+  .hero-title {
+    font-size: 8em;
+  }
+
+  /* Adjust section pading for tablet view */
+  section {
+    padding: 2em 1.5em;
+  }
+
+  /* Change Alumni page layout to one column layout */
+  #alumni-flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #alumni-flex-container img {
+    height: 500px;
+    padding-top: 1em;
+  }
+
+  /* Media query by screen size. Styling for mobile view */
+
+  @media only screen and (max-width: 460px) {
+    /* Hide logo due to lack of screen size */
+    #logo img {
+      display: none;
+    }
+
+    ul {
+      position: absolute;
+      transform: none;
+      top: 72px;
+    }
+
+    /* Reduce hero title font size for mobile view */
+    .hero-title {
+      font-size: 4em;
+    }
+
+    /* Hero image styling */
+
+    .hero-image {
+      position: relative;
+    }
+
+    /* Reduce hero image height for mobile view */
+    .hero-image img,
+    .slideshow-container {
+      height: 75vh;
+    }
+
+    /* Reduce title image height for mobile view */
+    .title-image {
+      height: 250px;
+    }
+
+    /* Change grid layouts to one column layout */
+    .z-grid-container,
+    .alumni-grid-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .z-grid-container h1 {
+      text-align: center;
+    }
+
+    .z-grid-container img {
+      padding-top: 1em;
+    }
+
+    .grid-item {
+      margin-bottom: 1em;
+    }
+
+    /* Adjust section pading for mobile view */
+    section {
+      padding: 1.5em;
+    }
+
+    h1 {
+      padding-top: 0;
+    }
+
+    /* Adjust alumni page images height for mobile view */
+    #alumni-flex-container img {
+      height: 250px;
+    }
+  }
+}
