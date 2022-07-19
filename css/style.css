@@ -231,28 +231,6 @@ ul li {
   }
 }
 
-/* Z-layout container setup */
-
-.z-grid-container {
-  display: grid;
-  grid-template-areas: "gi1 gi2";
-  column-gap: 1.5em;
-}
-
-.grid-item1 {
-  grid-area: gi1;
-}
-.grid-item2 {
-  grid-area: gi2;
-}
-
-.grid-item3 {
-  grid-area: gi2;
-}
-.grid-item4 {
-  grid-area: gi1;
-}
-
 /* Alumni section styling (home) */
 
 #alumni a {
@@ -299,16 +277,6 @@ ul li {
 #alumni span {
   color: #ffffff;
   font-weight: bold;
-}
-
-/* Styling for heading title on hero images */
-
-.hero-title {
-  color: #ffffff;
-  font-size: 10em;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
 }
 
 /* Contact form styling in contac section */
