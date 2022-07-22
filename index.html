@@ -48,9 +48,9 @@
     </div>
     <!-- Specifies a header for the document. -->
     <header class="hero-image">
-        <video autoplay muted loop id="intro">
-            <source src="media/intro.mp4" type="video/mp4">
-        </video>
+      <video autoplay muted loop id="intro">
+        <source src="media/intro.mp4" type="video/mp4" />
+      </video>
     </header>
     <section id="about">
       <h1>About Us</h1>
@@ -83,13 +83,13 @@
     <!-- Alumni section on home page. -->
     <section id="specs">
       <h1>Specs</h1>
-      <div class="alumni-grid-container">
+      <div class="specs-grid-container">
         <div class="grid-item">
-          <div class="alumni-image">
+          <div class="specs-image">
             <!-- Burmiston, Ray. 2014. Image. https://www.bbc.com/news/entertainment-arts-26985230 -->
             <img src="images/alumni3.jpg" />
           </div>
-          <div class="alumni-text">
+          <div class="specs-text">
             <h2>Speed</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -98,11 +98,11 @@
           </div>
         </div>
         <div class="grid-item">
-          <div class="alumni-image">
+          <div class="specs-image">
             <!-- Burmiston, Ray. 2014. Image. https://www.bbc.com/news/entertainment-arts-26985230 -->
             <img src="images/alumni3.jpg" />
           </div>
-          <div class="alumni-text">
+          <div class="specs-text">
             <h2>Enviroment</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -111,11 +111,11 @@
           </div>
         </div>
         <div class="grid-item">
-          <div class="alumni-image">
+          <div class="specs-image">
             <!-- Burmiston, Ray. 2014. Image. https://www.bbc.com/news/entertainment-arts-26985230 -->
             <img src="images/alumni3.jpg" />
           </div>
-          <div class="alumni-text">
+          <div class="specs-text">
             <h2>Time</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -148,18 +148,17 @@
     <footer>
       <p>A3 DIG24 Web Design 2: Malcolm Tsang (20882233)</p>
     </footer>
+    <!-- Reference to external javascript file -->
     <script type="text/javascript" src="/scripts/script.js"></script>
-
-    <script>
-      checkUserDetails();
-      showSlides(1);
-      stickyNavbar();
-    </script>
     <!-- cdn for shoelace js -->
     <script
       type="module"
       src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/shoelace.js"
     ></script>
-    <!-- Reference to external javascript file -->
+    <script>
+      checkUserDetails();
+      showSlides(1);
+      stickyNavbar();
+    </script>
   </body>
 </html>

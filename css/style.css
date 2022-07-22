@@ -231,18 +231,7 @@ section img {
 
 /* Alumni section styling (home) */
 
-#alumni a {
-  color: #bfa84b;
-  font-size: 1.25em;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-#alumni a:hover {
-  text-decoration: underline;
-}
-
-.alumni-grid-container {
+.specs-grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   padding-top: 1em;
@@ -254,27 +243,22 @@ section img {
   padding: 1em;
 }
 
-.alumni-image {
+.specs-image {
   display: flex;
   align-items: center;
 }
 
-.alumni-image img {
+.specs-image img {
   height: 300px;
 }
 
-.alumni-text {
+.specs-text {
   align-items: center;
   padding-top: 1em;
 }
 
-.alumni-text p {
+.specs-text p {
   margin-top: 1em;
-}
-
-#alumni span {
-  color: #ffffff;
-  font-weight: bold;
 }
 
 /* Contact form styling in contac section */
@@ -396,23 +380,18 @@ footer {
     text-align: center;
   }
 
-  /* Reduce hero title font size for tablet view */
-  .hero-title {
-    font-size: 8em;
-  }
-
   /* Adjust section pading for tablet view */
   section {
     padding: 2em 1.5em;
   }
 
   /* Change Alumni page layout to one column layout */
-  #alumni-flex-container {
+  #specs-flex-container {
     display: flex;
     flex-direction: column;
   }
 
-  #alumni-flex-container img {
+  #specs-flex-container img {
     height: 500px;
     padding-top: 1em;
   }
@@ -431,40 +410,26 @@ footer {
       top: 72px;
     }
 
-    /* Reduce hero title font size for mobile view */
-    .hero-title {
-      font-size: 4em;
-    }
-
     /* Hero image styling */
 
     .hero-image {
       position: relative;
     }
 
-    /* Reduce hero image height for mobile view */
+    /* Reduce hero image height for mobile view VIDEO */
     .hero-image img,
     .slideshow-container {
       height: 75vh;
     }
 
-    /* Reduce title image height for mobile view */
-    .title-image {
-      height: 250px;
-    }
-
     /* Change grid layouts to one column layout */
-    .z-grid-container,
-    .alumni-grid-container {
+    .specs-grid-container,
+    .tech-grid-container {
       display: flex;
       flex-direction: column;
     }
 
-    .z-grid-container h1 {
-      text-align: center;
-    }
-
-    .z-grid-container img {
+    .tech-grid-container img {
       padding-top: 1em;
     }
 
@@ -482,7 +447,7 @@ footer {
     }
 
     /* Adjust alumni page images height for mobile view */
-    #alumni-flex-container img {
+    #specs-flex-container img {
       height: 250px;
     }
   }
