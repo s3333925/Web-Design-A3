@@ -1,7 +1,7 @@
 <!-- Specifies that this is a HTML document. -->
 <!DOCTYPE html>
 <!-- Specifies the document language. -->
-<html lang="en-us">
+<html lang="en-us" class="sl-theme-dark">
   <!-- A container to put ancilliary information which goes with the document. -->
   <head>
     <!-- Declares the character encoding. -->
@@ -18,8 +18,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <!-- Reference to external javascript file -->
-    <script type="text/javascript" src="/scripts/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/themes/dark.css"
+    />
   </head>
   <!-- Body container to hold the content of the document. -->
   <body>
@@ -46,7 +48,16 @@
     </div>
     <!-- Specifies a header for the document. -->
     <header class="hero-image">
-      <!-- Carousel hero image setion -->
+        <video autoplay muted loop id="intro">
+            <source src="media/intro.mp4" type="video/mp4">
+        </video>
+    </header>
+    <section id="about">
+      <h1>About Us</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
       <div class="slideshow-container">
         <div class="mySlides fade">
           <!-- Bloom, Kael. 2018. Image. https://unsplash.com/photos/0Fko0cLI2VQ. -->
@@ -68,22 +79,18 @@
           <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </div>
-    </header>
+    </section>
     <!-- Alumni section on home page. -->
-    <section id="alumni">
-      <h1>Alumni</h1>
+    <section id="specs">
+      <h1>Specs</h1>
       <div class="alumni-grid-container">
         <div class="grid-item">
           <div class="alumni-image">
-            <a href="alumni.html#john-farnham">
-              <!-- Sony Music. 2016. Image. https://sonymusic.com.au/artist-roster/john-farnham/attachment/john-farnham/. -->
-              <img src="images/alumni1.jpg" />
-            </a>
+            <!-- Burmiston, Ray. 2014. Image. https://www.bbc.com/news/entertainment-arts-26985230 -->
+            <img src="images/alumni3.jpg" />
           </div>
           <div class="alumni-text">
-            <a href="alumni.html#john-farnham">John Farnham</a>
-            <p><span>Class of 1975</span></p>
-            <p><span>Singer</span></p>
+            <h2>Speed</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -92,15 +99,11 @@
         </div>
         <div class="grid-item">
           <div class="alumni-image">
-            <a href="alumni.html#guy-sebastian">
-              <!-- ARIA Awards. 2020. Image. https://www.billboard.com/pro/guy-sebastian-aria-australia-albums-chart-truth/. -->
-              <img src="images/alumni2.jpg" />
-            </a>
+            <!-- Burmiston, Ray. 2014. Image. https://www.bbc.com/news/entertainment-arts-26985230 -->
+            <img src="images/alumni3.jpg" />
           </div>
           <div class="alumni-text">
-            <a href="alumni.html#guy-sebastian">Guy Sebastian</a>
-            <p><span>Class of 2003</span></p>
-            <p><span>Singer</span></p>
+            <h2>Enviroment</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -109,15 +112,11 @@
         </div>
         <div class="grid-item">
           <div class="alumni-image">
-            <a href="alumni.html#kylie-minogue">
-              <!-- Burmiston, Ray. 2014. Image. https://www.bbc.com/news/entertainment-arts-26985230 -->
-              <img src="images/alumni3.jpg" />
-            </a>
+            <!-- Burmiston, Ray. 2014. Image. https://www.bbc.com/news/entertainment-arts-26985230 -->
+            <img src="images/alumni3.jpg" />
           </div>
           <div class="alumni-text">
-            <a href="alumni.html#kylie-minogue">Kylie Minogue</a>
-            <p><span>Class of 1995</span></p>
-            <p><span>Singer</span></p>
+            <h2>Time</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -126,16 +125,22 @@
         </div>
       </div>
     </section>
+    <section id="technology">
+      <h1>Technology</h1>
+    </section>
     <!-- Contact section on home page. -->
     <section id="contact">
       <h1>Contact</h1>
       <form>
         <label>Name*</label>
-        <input type="text" required />
+        <input type="text" id="name" required />
         <label>Email*</label>
-        <input type="text" required />
+        <input type="text" id="email" required />
         <label>Message*</label>
         <textarea required></textarea>
+        <sl-switch id="remember" onclick="forgetOrRememberMe()"
+          >Remember Me</sl-switch
+        >
         <input type="submit" value="Submit" />
       </form>
     </section>
@@ -143,10 +148,18 @@
     <footer>
       <p>A3 DIG24 Web Design 2: Malcolm Tsang (20882233)</p>
     </footer>
+    <script type="text/javascript" src="/scripts/script.js"></script>
+
+    <script>
+      checkUserDetails();
+      showSlides(1);
+      stickyNavbar();
+    </script>
+    <!-- cdn for shoelace js -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/shoelace.js"
+    ></script>
+    <!-- Reference to external javascript file -->
   </body>
 </html>
-<!-- Script to call functions to create a sticky nav bar and change carousel hero image. -->
-<script>
-  stickyNavbar();
-  showSlides(1);
-</script>

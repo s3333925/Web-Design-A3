@@ -48,3 +48,24 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+function checkUserDetails() {
+  if (localStorage.getItem("name") === null) {
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+  } else {
+    document.getElementById("name").value = localStorage.name;
+    document.getElementById("email").value = localStorage.email;
+    document.getElementById("remember").setAttribute("checked", "checked");
+  }
+}
+
+function forgetOrRememberMe() {
+  // Delete stored user information from local storage
+  if (document.getElementById("remember").checked !== true) {
+    localStorage.clear();
+  } else {
+    localStorage.name = document.getElementById("name").value;
+    localStorage.email = document.getElementById("email").value;
+  }
+}
