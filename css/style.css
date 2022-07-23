@@ -23,7 +23,6 @@ body {
 
 h1 {
   color: #bfa84b;
-  margin: 0;
 }
 
 section:nth-child(even),
@@ -77,16 +76,9 @@ nav {
   transform: translate(-50%, -50%);
 }
 
-#logo p {
-  margin-left: 1em;
-}
-
-#logo span {
-  font-weight: normal;
-}
-
-#logo:hover {
-  color: #ffffff;
+#logo img {
+  height: 35px;
+  width: 35px;
 }
 
 nav a {
@@ -229,18 +221,14 @@ section img {
   }
 }
 
-/* Alumni section styling (home) */
+/* ----------------------------------------------------------------------------------------- */
+
+/* Specs section styling */
 
 .specs-grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  padding-top: 1em;
-  column-gap: 1em;
-}
-
-.grid-item {
-  background: #2e3036;
-  padding: 1em;
+  column-gap: 2.5em;
 }
 
 .specs-image {
@@ -258,6 +246,31 @@ section img {
 }
 
 .specs-text p {
+  margin-top: 1em;
+}
+
+/* Tech section styling */
+
+.tech-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 2.5em;
+}
+
+.tech-image {
+  display: flex;
+  align-items: center;
+}
+
+.tech-image img {
+  height: 100px;
+}
+
+.tech-text {
+  align-items: center;
+}
+
+.tech-text p {
   margin-top: 1em;
 }
 
@@ -306,6 +319,15 @@ input[type="submit"] {
   margin-top: 1em;
 }
 
+/* Back to top button positioning */
+
+#button-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
 /* Footer section styling */
 
 footer {
@@ -313,6 +335,8 @@ footer {
   background-color: #000000;
   padding: 1em;
 }
+
+/* --------------------------------------------------------------------------------------------------------- */
 
 /* Hide hamburger icon on desktop view */
 
@@ -366,10 +390,6 @@ footer {
     transform: translate(-50%, -50%);
   }
 
-  #logo p {
-    margin-left: 1em;
-  }
-
   /* Hamburger icon */
   .wrapper .menu-icon {
     color: #fff;
@@ -399,11 +419,6 @@ footer {
   /* Media query by screen size. Styling for mobile view */
 
   @media only screen and (max-width: 460px) {
-    /* Hide logo due to lack of screen size */
-    #logo img {
-      display: none;
-    }
-
     ul {
       position: absolute;
       transform: none;

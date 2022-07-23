@@ -14,14 +14,18 @@
     <title>VicHyper</title>
     <!-- Link to the document stylesheet -->
     <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <!-- cdn for shoelace css -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/themes/dark.css"
-    />
+      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/themes/dark.css" />
+    <!-- cdn for bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+
+
   </head>
   <!-- Body container to hold the content of the document. -->
   <body>
@@ -34,7 +38,7 @@
         </label>
         <a href="index.html">
           <div id="logo">
-            <img src="images/logo.jpg" />
+            <img src="images/logo.png" />
           </div>
         </a>
         <ul class="links">
@@ -127,6 +131,38 @@
     </section>
     <section id="technology">
       <h1>Technology</h1>
+      <div class="tech-grid-container">
+        <div class="tech-image">
+          <img src="images/alumni3.jpg" />
+        </div>
+        <div class="tech-text">
+          <h2>Tech</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="tech-image">
+          <img src="images/alumni3.jpg" />
+        </div>
+        <div class="tech-text">
+          <h2>Tech</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="tech-image">
+          <img src="images/alumni3.jpg" />
+        </div>
+        <div class="tech-text">
+          <h2>Tech</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
     </section>
     <!-- Contact section on home page. -->
     <section id="contact">
@@ -144,6 +180,10 @@
         <input type="submit" value="Submit" />
       </form>
     </section>
+    <!-- Back to top button -->
+    <sl-tooltip content="Click to return to the top">
+        <sl-button onclick="backToTop()" id="button-top" >^</sl-button>
+    </sl-tooltip>
     <!-- Defines a footer for the document. -->
     <footer>
       <p>A3 DIG24 Web Design 2: Malcolm Tsang (20882233)</p>
@@ -151,14 +191,12 @@
     <!-- Reference to external javascript file -->
     <script type="text/javascript" src="/scripts/script.js"></script>
     <!-- cdn for shoelace js -->
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/shoelace.js"
-    ></script>
-    <script>
-      checkUserDetails();
-      showSlides(1);
-      stickyNavbar();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/shoelace.js"></script>
+    <!-- cdn for bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- cdn for jquery js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <!-- cdn for popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   </body>
 </html>
