@@ -3,10 +3,21 @@
   <head>
     <title>Bootstrap Example</title>
     <meta charset="utf-8" />
+    <!-- Link to the document stylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- cdn for bootstrap css -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
-
+    <!-- cdn for shoelace css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/themes/dark.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -15,18 +26,7 @@
     <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
       <a class="navbar-brand" href="#">
         <div id="logo">
-          <img
-            src="images/logo.png"
-            style="
-              height: 35px;
-              display: flex;
-              align-items: center;
-              position: absolute;
-              top: 7.5px;
-              left: 50%;
-              transform: translate(-50%, 0);
-            "
-          />
+          <img src="images/logo.png" />
         </div>
       </a>
       <button
@@ -40,7 +40,7 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html#">Home</a>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html#about">About Us</a>
