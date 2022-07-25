@@ -16,12 +16,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
     <!-- cdn for shoelace css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/themes/dark.css"/>
-    <!-- Link to the document stylesheet -->
-    <link type="text/css" rel="stylesheet" href="css/style.css"/>
-  </head>
+    <!-- Link to overide sl dark theme properties -->
+    <link type="text/css" rel="stylesheet" href="css/sl-theme-dark-overide.css"/>
+     <!-- Link to the document stylesheet -->
+     <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    </head>
   <!-- Body container to hold the content of the document. -->
   <body>
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+      <nav class="navbar navbar-expand-md navbar-dark sticky-top">
           <a class="navbar-brand" href="#">
             <div id="logo">
               <img src="images/logo.png"/>
@@ -67,27 +69,32 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <!-- Bloom, Kael. 2018. Image. https://unsplash.com/photos/0Fko0cLI2VQ. -->
-          <img src="images/hero1.jpg" />
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images/hero1.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/hero2.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/hero3.jpg" alt="">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <div class="mySlides fade">
-          <!-- Fernandez, Obie. 2020. Image. https://unsplash.com/photos/uDAr4KFKY40. -->
-          <img src="images/hero2.jpg" />
-        </div>
-        <div class="mySlides fade">
-          <!-- Innocenti, Fran. 2019. Image. https://unsplash.com/photos/I_LxDFIIRIA. -->
-          <img src="images/hero3.jpg" />
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-        <div class="indicator">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-      </div>
     </section>
     <!-- Specs section. -->
     <section id="specs">
@@ -180,7 +187,7 @@
         <input type="text" id="email" required />
         <label>Message*</label>
         <textarea required></textarea>
-        <sl-switch id="remember" onclick="forgetOrRememberMe()">Remember Me</sl-switch>
+        <sl-switch  id="remember" onclick="forgetOrRememberMe()">Remember Me</sl-switch>
         <input type="submit" value="Submit" />
       </form>
     </section>
