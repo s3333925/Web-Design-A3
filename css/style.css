@@ -18,6 +18,7 @@ body {
   font-family: OpenSansReg, Helvetica, sans-serif;
   font-size: 16px;
   min-width: 300px;
+  overflow-x: clip;
 }
 
 h1 {
