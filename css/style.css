@@ -13,6 +13,7 @@
 
 html,
 body {
+  position: relative;
   margin: 0;
   color: white;
   font-family: OpenSansReg, Helvetica, sans-serif;
@@ -37,7 +38,7 @@ section:nth-child(odd) {
 
 section {
   padding: 3em 15%;
-  scroll-margin-top: 72px;
+  scroll-margin-top: 61px;
 }
 
 section a {
