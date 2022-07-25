@@ -1,26 +1,3 @@
-/*
-
-// Function create sticky nav bar.
-// W3Schools. 2022. Code. https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
-function stickyNavbar() {
-  window.onscroll = function () {
-    myFunction();
-  };
-
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
-
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky");
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-}
-
-*/
-
 // Function to change carousel image on home page.
 // W3Schools. 2022. Code. https://www.w3schools.com/howto/howto_js_slideshow.asp
 let slideIndex = 1;
@@ -55,10 +32,11 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-// // Function to chech if any user data is stored in local storage
+// Forget or remember user contact information
 
 checkUserDetails();
 
+// Function to check if any user data is stored in local storage
 function checkUserDetails() {
   if (localStorage.getItem("name") === null) {
     document.getElementById("name").value = "";
@@ -70,20 +48,22 @@ function checkUserDetails() {
   }
 }
 
+// Function to clear or store user data in local storage
 function forgetOrRememberMe() {
-  // Delete stored user information from local storage
+  // If switch is unchecked delete user information from local storage
   if (document.getElementById("remember").checked !== true) {
     localStorage.clear();
-  } else {
+  }
+  // Otherwise store user information in local storage
+  else {
     localStorage.name = document.getElementById("name").value;
     localStorage.email = document.getElementById("email").value;
   }
 }
 
-// ----------------------------------
+// Back to top
 
-//Get the button
-let mybutton = document.getElementById("button-top");
+let button = document.getElementById("button-top");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -91,17 +71,16 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  console.log("vbn");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    button.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    button.style.display = "none";
   }
 }
+
 // When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
+button.addEventListener("click", backToTop);
 
 function backToTop() {
-  document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
