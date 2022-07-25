@@ -146,11 +146,11 @@ nav {
   height: 100px;
 }
 
-.tech-text {
+#tech-text {
   align-items: center;
 }
 
-.tech-text p {
+#tech-text p {
   margin-top: 1em;
 }
 

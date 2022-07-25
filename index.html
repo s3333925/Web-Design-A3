@@ -12,11 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- Specifies the document title. -->
     <title>VicHyper</title>
-    <!-- cdn for scrollspy -->
+    <!-- CDN for AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CDN for Scrollspy CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- cdn for bootstrap css -->
+    <!-- CDN for Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
-    <!-- cdn for shoelace css -->
+    <!-- CDN for Shoelace CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/themes/dark.css"/>
     <!-- Link to overide sl dark theme properties -->
     <link type="text/css" rel="stylesheet" href="css/sl-theme-dark-overide.css"/>
@@ -147,7 +149,7 @@
         <div class="tech-image">
           <img src="images/alumni3.jpg" />
         </div>
-        <div class="tech-text">
+        <div data-aos="fade-left" data-aos-duration="2000" id="tech-text" >
           <h2>Tech</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -157,7 +159,7 @@
         <div class="tech-image">
           <img src="images/alumni3.jpg" />
         </div>
-        <div class="tech-text">
+        <div data-aos="fade-left" data-aos-duration="2000" id="tech-text">
           <h2>Tech</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -167,7 +169,7 @@
         <div class="tech-image">
           <img src="images/alumni3.jpg" />
         </div>
-        <div class="tech-text">
+        <div data-aos="fade-left" data-aos-duration="2000" id="tech-text">
           <h2>Tech</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -198,13 +200,15 @@
     <footer>
       <p>A3 DIG24 Web Design 2: Malcolm Tsang (20882233)</p>
     </footer>
-        <!-- Reference to external javascript file -->
-        <script type="text/javascript" src="/scripts/script.js"></script>
-    <!-- cdn for boostrap js bundle including propper js-->
+    <!-- CDN for AOS (Animate On Scroll) js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Reference to external javascript file -->
+    <script type="text/javascript" src="/scripts/script.js"></script>
+    <!-- CDN for Voostrap js bundle including Propper js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- cdn for shoelace js -->
+    <!-- CDN for Shoelace js -->
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/shoelace.js"></script>
-    <!-- cdn for jquery js -->
+    <!-- CDN for Jquery js -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
    </body>
 </html>

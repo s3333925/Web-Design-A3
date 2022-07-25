@@ -1,3 +1,5 @@
+AOS.init();
+
 // Forget or remember user contact information
 
 checkUserDetails();
