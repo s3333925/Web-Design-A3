@@ -91,6 +91,7 @@ nav {
   height: 450px;
   vertical-align: middle;
   object-fit: cover;
+  padding-top: 2em;
 }
 
 /* Specs section styling */
@@ -104,6 +105,7 @@ nav {
 .specs-image {
   display: flex;
   align-items: center;
+  padding-top: 1em;
 }
 
 .specs-image img {
@@ -127,6 +129,7 @@ nav {
   border-radius: 15px;
   border: 2px solid;
   background-color: #181818;
+  padding-top: 1em;
 }
 
 .selection {
@@ -184,29 +187,29 @@ sl-progress-bar {
 
 .tech-grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 550px auto;
   column-gap: 2.5em;
 }
 
-.tech-image {
+.tech-video {
   display: flex;
   align-items: center;
 }
 
-.tech-image,
-#tech-text {
+.tech-video,
+.tech-text {
   padding: 1em 0;
 }
 
-.tech-image img {
-  height: 100px;
+.tech-video video {
+  width: 100%;
 }
 
-#tech-text {
+.tech-text {
   align-items: center;
 }
 
-#tech-text p {
+.tech-text p {
   margin-top: 1em;
 }
 
@@ -214,7 +217,7 @@ sl-progress-bar {
 
 .input::part(form-control),
 sl-switch {
-  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .input::part(input),
@@ -226,7 +229,6 @@ sl-switch {
   display: flex;
   margin: auto;
   width: 100px;
-  margin-top: 1em;
 }
 
 /* Back to top button positioning */
@@ -256,6 +258,10 @@ footer {
     transform: translate(-50%, 0);
   }
 
+  .tech-grid-container {
+    grid-template-columns: 350px auto;
+  }
+
   /* Adjust section pading for tablet view */
   section {
     padding: 2em 1.5em;
@@ -279,7 +285,7 @@ footer {
       flex-direction: column;
     }
 
-    .tech-grid-container img {
+    .tech-grid-container video {
       padding-top: 1em;
     }
 

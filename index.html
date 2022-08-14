@@ -9,54 +9,73 @@
     <!-- Specifies the author of page -->
     <meta name="author" content="Malcolm Tsang" />
     <!-- Specifies browser instruction on how to control viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Specifies the document title. -->
     <title>VicHyper</title>
     <!-- CDN for AOS (Animate On Scroll) CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- CDN for Scrollspy CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!-- CDN for Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
     <!-- CDN for Shoelace CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/themes/dark.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/themes/dark.css"
+    />
     <!-- Link to overide sl dark theme properties -->
-    <link type="text/css" rel="stylesheet" href="css/sl-theme-dark-overide.css"/>
-     <!-- Link to the document stylesheet -->
-     <link type="text/css" rel="stylesheet" href="css/style.css"/>
-    </head>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/sl-theme-dark-overide.css"
+    />
+    <!-- Link to the document stylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+  </head>
   <!-- Body container to hold the content of the document. -->
   <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="62">
-      <nav id="navbar" list-example"" class="navbar navbar-expand-md navbar-dark sticky-top">
-          <a class="navbar-brand" href="#">
-            <div id="logo">
-              <img src="images/logo.png"/>
-            </div>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#specs">Specs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#technology">Technology</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark sticky-top">
+      <a class="navbar-brand" href="#">
+        <div id="logo">
+          <img src="images/logo.png" alt="" />
+        </div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#specs">Specs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#estimator">Route Estimator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#technology">Technology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- Specifies a header for the document. -->
     <header class="hero">
       <video autoplay muted loop id="intro">
@@ -70,28 +89,59 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/hero1.jpg" class="d-block w-100" alt="...">
+            <img src="images/hero1.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="images/hero2.jpg" class="d-block w-100" alt="...">
+            <img src="images/hero2.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="images/hero3.jpg" class="d-block w-100" alt="...">
+            <img src="images/hero3.jpg" class="d-block w-100" alt="..." />
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -104,7 +154,7 @@
         <div class="grid-item">
           <div class="specs-image">
             <!-- Burmiston, Ray. 2014. Image. https://www.bbc.com/news/entertainment-arts-26985230 -->
-            <img src="images/clock.png" />
+            <img src="images/clock.png" alt="" />
           </div>
           <div class="specs-text">
             <h2>Speed</h2>
@@ -117,7 +167,7 @@
         <div class="grid-item">
           <div class="specs-image">
             <!-- Burmiston, Ray. 2014. Image. https://www.bbc.com/news/entertainment-arts-26985230 -->
-            <img src="images/clock.png" />
+            <img src="images/clock.png" alt="" />
           </div>
           <div class="specs-text">
             <h2>Enviroment</h2>
@@ -130,7 +180,7 @@
         <div class="grid-item">
           <div class="specs-image">
             <!-- Burmiston, Ray. 2014. Image. https://www.bbc.com/news/entertainment-arts-26985230 -->
-            <img src="images/clock.png" />
+            <img src="images/clock.png" alt="" />
           </div>
           <div class="specs-text">
             <h2>Time</h2>
@@ -142,11 +192,17 @@
         </div>
       </div>
     </section>
-    <section>
-          <div class="route-estimator">
+    <section id="estimator">
+      <h1>Route Estimator</h1>
+      <div class="route-estimator">
         <div class="selection">
           <div>
-            <sl-select class="select" label="Origin" placeholder="Select" id="origin">
+            <sl-select
+              class="select"
+              label="Origin"
+              placeholder="Select"
+              id="origin"
+            >
               <sl-menu-item value="ade">Adelaide</sl-menu-item>
               <sl-menu-item value="bri">Brisbane</sl-menu-item>
               <sl-menu-item value="mel">Melbourne</sl-menu-item>
@@ -155,7 +211,12 @@
             </sl-select>
           </div>
           <div>
-            <sl-select class="select" label="Destination" placeholder="Select" id="dest">
+            <sl-select
+              class="select"
+              label="Destination"
+              placeholder="Select"
+              id="dest"
+            >
               <sl-menu-item value="ade">Adelaide</sl-menu-item>
               <sl-menu-item value="bri">Brisbane</sl-menu-item>
               <sl-menu-item value="mel">Melbourne</sl-menu-item>
@@ -166,7 +227,7 @@
         </div>
         <div class="data">
           <div>
-            <img src="/images/hyper.png" alt=""/>
+            <img src="/images/hyper.png" alt="" />
           </div>
           <div class="pb">
             <sl-progress-bar id="hyperPB" label="Hyperloop"></sl-progress-bar>
@@ -175,7 +236,7 @@
         </div>
         <div class="data">
           <div>
-            <img src="/images/plane.png" alt=""/>
+            <img src="/images/plane.png" alt="" />
           </div>
           <div class="pb">
             <sl-progress-bar id="planePB"></sl-progress-bar>
@@ -184,7 +245,7 @@
         </div>
         <div class="data">
           <div>
-            <img src="/images/car.png" alt=""/>
+            <img src="/images/car.png" alt="" />
           </div>
           <div class="pb">
             <sl-progress-bar id="trainPB"></sl-progress-bar>
@@ -192,39 +253,46 @@
           <div class="result" id="carRes">0 min</div>
         </div>
         <div class="button">
-          <sl-button class="calc" onclick="estimateTravelTime()">Calculate</sl-button>
+          <sl-button class="calc" onclick="estimateTravelTime()"
+            >Calculate</sl-button
+          >
         </div>
       </div>
-    </div>
     </section>
     <!-- Technology section. -->
     <section id="technology">
       <h1>Technology</h1>
       <div class="tech-grid-container">
-        <div class="tech-image">
-          <img src="images/alumni3.jpg" />
+        <div class="tech-video">
+          <video autoplay loop>
+            <source src="media/mag.mp4" type="video/mp4" />
+          </video>
         </div>
-        <div data-aos="fade-left" data-aos-duration="2000" id="tech-text" >
+        <div data-aos="fade-left" data-aos-duration="2000" class="tech-text">
           <h2>Electromagnetic Propulsion</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <div class="tech-image">
-          <img src="images/alumni3.jpg" />
+        <div class="tech-video">
+          <video autoplay loop>
+            <source src="media/sus.mp4" type="video/mp4" />
+          </video>
         </div>
-        <div data-aos="fade-left" data-aos-duration="2000" id="tech-text">
+        <div data-aos="fade-left" data-aos-duration="2000" class="tech-text">
           <h2>Electromagnetic Suspension</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <div class="tech-image">
-          <img src="images/alumni3.jpg" />
+        <div class="tech-video">
+          <video autoplay loop>
+            <source src="media/lps.mp4" type="video/mp4" />
+          </video>
         </div>
-        <div data-aos="fade-left" data-aos-duration="2000" id="tech-text">
+        <div data-aos="fade-left" data-aos-duration="2000" class="tech-text">
           <h2>Low Pressure System</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -240,25 +308,37 @@
         <sl-input class="input" label="Name" required></sl-input>
         <sl-input class="input" label="Email" required></sl-input>
         <sl-textarea class="input" label="Comments" required></sl-textarea>
-        <sl-switch  id="remember" onclick="forgetOrRememberMe()">Remember Me</sl-switch>
+        <sl-switch id="remember" onclick="forgetOrRememberMe()"
+          >Remember Me</sl-switch
+        >
         <sl-button class="submit">Submit</sl-button>
       </form>
     </section>
     <!-- Back to top button -->
     <sl-tooltip content="Click to return to the top">
-        <sl-button onclick="backToTop()" id="button-top" >^</sl-button>
+      <sl-button onclick="backToTop()" id="button-top">^</sl-button>
     </sl-tooltip>
     <!-- Defines a footer for the document. -->
     <footer>A3 DIG24 Web Design 2: Malcolm Tsang (20882233)</footer>
     <!-- CDN for AOS (Animate On Scroll) js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Reference to external javascript file -->
-    <script type="text/javascript" src="/scripts/script.js"></script>
+    <script src="/scripts/script.js"></script>
     <!-- CDN for Boostrap js bundle including Propper js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <!-- CDN for Shoelace js -->
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/shoelace.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/shoelace.js"
+    ></script>
     <!-- CDN for Jquery js -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
