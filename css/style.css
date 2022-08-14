@@ -113,7 +113,7 @@ nav {
 
 .specs-text {
   align-items: center;
-  padding-top: 1em;
+  padding-top: 2em;
 }
 
 .specs-text p {
@@ -126,7 +126,7 @@ nav {
   display: grid;
   border-radius: 15px;
   border: 2px solid;
-  background-color: #292929;
+  background-color: #181818;
 }
 
 .selection {
@@ -139,11 +139,11 @@ nav {
 }
 
 .select::part(form-control-label) {
-  padding-bottom: 5px;
+  padding-bottom: 0.5em;
 }
 
 .select::part(control) {
-  background-color: #292929;
+  background-color: #181818;
 }
 
 .data {
@@ -161,7 +161,7 @@ nav {
 sl-progress-bar {
   margin-top: 17px;
   --height: 6px;
-  --track-color: rgba(0, 0, 0, 0.35);
+  --track-color: #2c2c2c;
 }
 
 .result {
@@ -193,6 +193,11 @@ sl-progress-bar {
   align-items: center;
 }
 
+.tech-image,
+#tech-text {
+  padding: 1em 0;
+}
+
 .tech-image img {
   height: 100px;
 }
@@ -207,39 +212,18 @@ sl-progress-bar {
 
 /* Contact form styling in contac section */
 
-form {
-  display: flex;
-  flex-direction: column;
+.input::part(form-control),
+sl-switch {
+  padding-top: 1em;
 }
 
-label {
-  padding: 1em 0 1em 0;
-  font-weight: bold;
-}
-
-input,
-textarea {
-  background-color: #37393f;
-  color: #ffffff;
-  padding: 0.5em;
-  border: none;
-}
-
-input:focus,
-textarea:focus {
-  outline-color: #bfa84b;
-}
-
-textarea {
-  margin-bottom: 1em;
-  height: 10em;
-}
-
-label {
-  margin: 0;
+.input::part(input),
+.input::part(textarea) {
+  background-color: #181818;
 }
 
 .submit {
+  display: flex;
   margin: auto;
   width: 100px;
   margin-top: 1em;
