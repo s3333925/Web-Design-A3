@@ -104,7 +104,7 @@
         <div class="grid-item">
           <div class="specs-image">
             <!-- Burmiston, Ray. 2014. Image. https://www.bbc.com/news/entertainment-arts-26985230 -->
-            <img src="images/alumni3.jpg" />
+            <img src="images/clock.png" />
           </div>
           <div class="specs-text">
             <h2>Speed</h2>
@@ -117,7 +117,7 @@
         <div class="grid-item">
           <div class="specs-image">
             <!-- Burmiston, Ray. 2014. Image. https://www.bbc.com/news/entertainment-arts-26985230 -->
-            <img src="images/alumni3.jpg" />
+            <img src="images/clock.png" />
           </div>
           <div class="specs-text">
             <h2>Enviroment</h2>
@@ -130,7 +130,7 @@
         <div class="grid-item">
           <div class="specs-image">
             <!-- Burmiston, Ray. 2014. Image. https://www.bbc.com/news/entertainment-arts-26985230 -->
-            <img src="images/alumni3.jpg" />
+            <img src="images/clock.png" />
           </div>
           <div class="specs-text">
             <h2>Time</h2>
@@ -142,6 +142,62 @@
         </div>
       </div>
     </section>
+    <section>
+          <div class="route-estimator">
+        <div class="selection">
+          <div>
+            <sl-select class="select" label="Origin" placeholder="Select" id="origin">
+              <sl-menu-item value="ade">Adelaide</sl-menu-item>
+              <sl-menu-item value="bri">Brisbane</sl-menu-item>
+              <sl-menu-item value="mel">Melbourne</sl-menu-item>
+              <sl-menu-item value="per">Perth</sl-menu-item>
+              <sl-menu-item value="syd">Sydney</sl-menu-item>
+            </sl-select>
+          </div>
+          <div>
+            <sl-select class="select" label="Destination" placeholder="Select" id="dest">
+              <sl-menu-item value="ade">Adelaide</sl-menu-item>
+              <sl-menu-item value="bri">Brisbane</sl-menu-item>
+              <sl-menu-item value="mel">Melbourne</sl-menu-item>
+              <sl-menu-item value="per">Perth</sl-menu-item>
+              <sl-menu-item value="syd">Sydney</sl-menu-item>
+            </sl-select>
+          </div>
+        </div>
+        <div class="data">
+          <div>
+            <img src="/images/hyper.png" alt=""/>
+          </div>
+          <div class="pb">
+            <sl-progress-bar id="hyperPB" label="Hyperloop"></sl-progress-bar>
+          </div>
+          <div class="result" id="hyperRes">0 min</div>
+        </div>
+        <div class="data">
+          <div>
+            <img src="/images/plane.png" alt=""/>
+          </div>
+          <div class="pb">
+            <sl-progress-bar id="planePB"></sl-progress-bar>
+          </div>
+          <div class="result" id="planeRes">0 min</div>
+        </div>
+        <div class="data">
+          <div>
+            <img src="/images/car.png" alt=""/>
+          </div>
+          <div class="pb">
+            <sl-progress-bar id="trainPB"></sl-progress-bar>
+          </div>
+          <div class="result" id="carRes">0 min</div>
+        </div>
+        <div class="button">
+          <sl-button class="calc" onclick="estimateTravelTime()">Calculate</sl-button>
+        </div>
+      </div>
+    </div>
+    </section>
+
     <!-- Technology section. -->
     <section id="technology">
       <h1>Technology</h1>
@@ -189,7 +245,7 @@
         <label>Message*</label>
         <textarea required></textarea>
         <sl-switch  id="remember" onclick="forgetOrRememberMe()">Remember Me</sl-switch>
-        <input type="submit" value="Submit" />
+        <sl-button class="submit">Submit</sl-button>
       </form>
     </section>
     <!-- Back to top button -->
@@ -202,11 +258,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Reference to external javascript file -->
     <script type="text/javascript" src="/scripts/script.js"></script>
-    <!-- CDN for Voostrap js bundle including Propper js-->
+    <!-- CDN for Boostrap js bundle including Propper js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- CDN for Shoelace js -->
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.78/dist/shoelace.js"></script>
     <!-- CDN for Jquery js -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-   </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
